@@ -1,0 +1,286 @@
+body {
+    background-color: #ffffff; /* ページ全体の背景色を白に設定 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.tags-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter-tag {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-tag:hover {
+    background-color: #0056b3;
+}
+
+.track-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.track {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.track h3 {
+    margin-top: 0;
+}
+
+.track audio {
+    width: 100%;
+}
+
+.download-buttons a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.download-buttons a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1920px) {
+    main {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        max-width: 375px;
+    }
+    .track {
+        width: calc(100% - 2rem);
+    }
+}
+
+
+<!-- ゲームログ用 -->
+
+.game-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-intro img {
+    display: block; /* 画像をブロック要素にして中央揃え */
+    margin: 0 auto; /* 左右の余白を自動調整 */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.game-intro p {
+    max-width: 800px;
+    margin: 1rem auto; /* 上下の余白を等しく設定し、中央揃え */
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.game-info {
+    margin-bottom: 2rem 0;
+    text-align: center;
+}
+
+.game-info table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%; /* 必要に応じて調整 */
+    max-width: 600px;
+}
+
+.game-info th, .game-info td {
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.game-info th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.game-info td {
+    background-color: #fff;
+}
+
+
+.game-log {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.entry {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 2rem; /* 追加する余白 */
+}
+
+.entry h3 {
+    margin-top: 0;
+}
+
+.entry img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.entry p {
+    text-align: left;
+}
+
+@media (max-width: 750px) {
+    .entry {
+        width: calc(100% - 2rem);
+    }
+}
+
+/* プレイ記録ページのスタイル */
+.log-entry {
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center;
+    flex-wrap: wrap; /* 画面幅に応じて折り返し */
+    gap: 1rem; /* 画像間のスペース */
+    margin-bottom: 1rem; /* テキストとの間の余白 */
+}
+
+.image-gallery a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-gallery img {
+    max-width: 230px; /* 各画像の最大幅を設定 */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s; /* ホバー時のアニメーション */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.image-gallery figcaption {
+    font-size: 0.9rem; /* 説明文のフォントサイズを小さめに設定 */
+    color: #555; /* 説明文の色 */
+    margin-top: 0.5rem; /* 画像との間に少し余白を追加 */
+}
+
+.log-entry p {
+    max-width: 800px;
+    margin: 1rem auto; /* 上下の余白を等しく設定し、中央揃え */
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.highlighted-text {
+    border: 2px solid #ccc; /* 枠の色や太さを指定 */
+    padding: 1rem; /* 枠とテキストの間の余白を指定 */
+    background-color: #fafaef; /* 背景色を指定 */
+    border-radius: 8px; /* 角を丸くする */
+}
+
+.highlighted-text h4 {
+    margin-top: 0; /* 見出しの上部余白をなくす */
+    margin-bottom: 0.2rem; /* 見出しの下部余白を小さく */
+    font-size: 1.1rem; /* 見出しのフォントサイズを指定 */
+    color: #333; /* 見出しの文字色を指定 */
+}
+
+.highlighted-text p {
+    margin-bottom: 0; /* 本文の下部余白をなくす */
+    font-size: 1rem; /* 本文のフォントサイズを指定 */
+    color: #222; /* 本文の文字色を指定 */
+}
