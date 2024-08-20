@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>サイト名</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">項目1</a></li>
+            <li><a href="#">項目2</a></li>
+            <li><a href="#">項目3</a></li>
+            <li><a href="#">項目4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>タイトル</h2>
+        <div class="tags-container">
+            <span class="filter-tag" data-tag="all">全てのタグを表示</span>
+            <span class="filter-tag" data-tag="楽しい">楽しい</span>
+            <span class="filter-tag" data-tag="悲しい">悲しい</span>
+            <span class="filter-tag" data-tag="熱い">熱い</span>
+            <span class="filter-tag" data-tag="神秘的">神秘的</span>
+        </div>
+        <div class="track-list">
+            <div class="track" data-tags="楽しい,熱い">
+                <h3>楽曲1</h3>
+                <audio controls>
+                    <source src="path/to/your/file1.mp3" type="audio/mp3">
+                    <source src="path/to/your/file1.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="path/to/your/file1.mp3" download>MP3</a>
+                    <a href="path/to/your/file1.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">楽しい, 熱い</span></p>
+                <p class="description">この楽曲はとても楽しいです。</p>
+            </div>
+            
+            <div class="track" data-tags="悲しい">
+                <h3>楽曲2</h3>
+                <audio controls>
+                    <source src="path/to/your/file2.mp3" type="audio/mp3">
+                    <source src="path/to/your/file2.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="path/to/your/file2.mp3" download>MP3</a>
+                    <a href="path/to/your/file2.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">悲しい</span></p>
+                <p class="description">この楽曲はとても悲しいです。</p>
+            </div>
+            
+            <div class="track" data-tags="熱い,神秘的">
+                <h3>楽曲3</h3>
+                <audio controls>
+                    <source src="path/to/your/file3.mp3" type="audio/mp3">
+                    <source src="path/to/your/file3.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="path/to/your/file3.mp3" download>MP3</a>
+                    <a href="path/to/your/file3.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">熱い, 神秘的</span></p>
+                <p class="description">この楽曲はとても熱いです。</p>
+            </div>
+            
+            <div class="track" data-tags="楽しい,悲しい,熱い">
+                <h3>楽曲4</h3>
+                <audio controls>
+                    <source src="path/to/your/file4.mp3" type="audio/mp3">
+                    <source src="path/to/your/file4.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="path/to/your/file4.mp3" download>MP3</a>
+                    <a href="path/to/your/file4.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">楽しい, 悲しい, 熱い</span></p>
+                <p class="description">この楽曲はとても楽しいです。</p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>©td | <a href="https://x.com/td_synth1_990"><img src="../images/X_logo-white.png" width="16px" height="16px"></a> | <a href="https://soundcloud.com/user-711542494/tracks"><img src="../images/1x1_SoundCloudLogo_cloudmark.jpg" width="20px" height="20px"></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+</html>
