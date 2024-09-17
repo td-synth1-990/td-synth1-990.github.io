@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 2024</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>制作日記 2024</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">トップ / music</a></li>
+            <li><a href="../projects.html">関わった作品 / projests</a></li>
+            <li><a href="blog-2024.html">制作日記 / blog</a></li>
+            <li><a href="../games/games.html">ゲームプレイ日記 / gamelog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="blog-filters">
+            <button onclick="sortPosts('asc')">日付順（古い順）</button>
+            <button onclick="sortPosts('desc')">日付順（新しい順）</button>
+            <button onclick="filterPostsByMonth('2024-09')">2024年9月</button>
+            <!-- <button onclick="filterPostsByMonth('2024-10')">2024年10月</button>
+            <button onclick="filterPostsByMonth('2024-11')">2024年11月</button>
+            <button onclick="filterPostsByMonth('2024-12')">2024年12月</button> -->
+            <button onclick="filterPosts('category1')">音楽制作</button>
+            <button onclick="filterPosts('category2')">カテゴリ2</button>
+            <button onclick="filterPosts('all')">全て</button>
+        </div>
+
+        <div id="blog-container">
+            <article class="blog-post" data-date="2024-09-01" data-category="category1" data-month="2024-09">
+                <h2>アルバム「25 Minutes Short Tracks」制作</h2>
+                <p class="post-date">2024年9月13日</p>
+                <p class="post-category">音楽制作</p>
+                <div class="image-and-text">
+                <a href="https://td-synth1-990.bandcamp.com/album/25-minutes-short-tracks" ><img src="../../assets/images/blog/ShortTracks.png"></a>
+                <p>アルバムを制作しました。このサイトに配置しているフリーDL音楽との違いは、ひとつのコンセプトに基づいて各曲を制作したことと、Bandcampにて0円以上で購入できるようにしてあることです。</p>
+                </div>
+                <h3>制作の動機とコンセプト</h3>
+                <p>タイトル通り短い曲たちをまとめています。作曲をしていると曲の一部分だけが出来るものの続きができずお蔵入りするということがよくあるのですが、ゲーム「ゆめにっき」のサントラを聴いているときにふと<b>「曲って……短くてもいいのでは？」</b>と思い、普段だったら楽曲の冒頭部分として作って続きをどうしようかなと考えるところを<b>「いや、続きなんてない、これで一つの曲！」</b>とすることにしました。
+                <br><br>参考にした曲の例として<b>「ゆめにっき」</b>サントラの曲はほとんどが短く、例えばタイトル画面の曲「ゆめのはじまり」は2小節の繰り返し、そのほか沢山の世界を歩き回るときの楽曲もほとんど4小節前後の繰り返しとなっています。他には好きなゲームで<b>「アークザラッド」</b>がありますが、これも「チョンガラ」は4小節、「セーブ&ロード」はたった2小節の繰り返しです。
+                </p>
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2dSSABKCRM?si=oKUl15QR8k8AmIVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/za/album/%E3%82%BB%E3%83%BC%E3%83%96-%E3%83%AD%E3%83%BC%E3%83%89/1084301411?i=1084301810"></iframe>
+                </div>
+                <p>もちろん、これはゲームのプレイ体験と同時であるからこそ退屈しないということに留意が必要ですが、例えば僕の楽曲をゲームなどに使う、あるいは生活や作業のBGMとして使うのであれば同じようにごく短いループの繰り返しでも充分楽曲として成立するだろうと考えました。
+                <br><br>そうした考えを発端に、なるべく短く、シンプルに作るということをコンセプトとしました。ただし、聴き手にとってシンプルであることと制作に時間をかけないことは必ずしもイコールではありません。
+                </p>
+                <h3>Bandcamp、YouTube等　各サイトへの投稿</h3>
+                <h4>Bandcamp</h4>
+                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=535333046/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://td-synth1-990.bandcamp.com/album/25-minutes-short-tracks">25 Minutes Short Tracks by td</a></iframe>
+                <p>Bandcampはアマチュアからプロまで使用している音楽配信サイトです。プロだと例えば平沢進など、メジャーレコード会社から独立して活動しているアーティストが使用しています。
+                    <br>ミュージシャンが無料ないしは値段を設定して楽曲を配信、販売することができ、「アルバムを○○円で販売する」、「10曲のうち3曲は無料で聴け、全曲聴くには■■円で購入可能」など様々な方法が取れます。
+                    <p>今回はお金を出してくれる人がいれば嬉しいという気持ちと、自分にとって習作であるという意識が強いことから、「無料で聴けるが、リスナーが値段を決めて購入すればダウンロードできる」という方法を取りました。
+                    Bandcampのアプリやブラウザ上でも聴ける他、購入すればアカウントの「コレクション」に追加されるのでそこから聴けたり、ダウンロードしてPCやスマートフォン、ウォークマンなどに入れて聴くこともできます。
+                    なんと1人の方が購入してくれています。すごくありがたい……！！</p>
+                    また、後述のSoundCloudやYouTubeでも無料で聴けるようにしたかったので、Bandcampでも0円での購入が選択肢に無いと整合性が取れないと思ったのもあります。
+                </p>
+                <h4>SoundCloud</h4>
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873483028&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-711542494" title="td" target="_blank" style="color: #cccccc; text-decoration: none;">td</a> · <a href="https://soundcloud.com/user-711542494/sets/25-minutes-short-tracks-1" title="25 Minutes Short Tracks" target="_blank" style="color: #cccccc; text-decoration: none;">25 Minutes Short Tracks</a></div>
+                <p>SoundCloudも多くのミュージシャンが楽曲を投稿していますね。有料プランに加入すれば月額サブスク配信も可能なようですが、個人的にはサブスクで配信したいという気持ちは全くないため普通に曲を投稿して聴いてもらうための場として利用しています。</p>
+                <h4>YouTube</h4>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qDUqkSgcyAw?si=tY354GqcB3-yex5V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>言わずと知れたYoutubeです。個人的には、一曲のMVを見るということはあってもアルバム単位で聴くという聴き方をYouTubeではしないのですが、
+                    作業用などのBGMとしてはYouTube垂れ流しという人もおろうと思い全曲まとめて25分の動画として投稿しました。</p>
+            
+            
+            </article>
+
+            <article class="blog-post" data-date="2024-08-28" data-category="category2" data-month="2024-08">
+                <h2>記事タイトル2</h2>
+                <p class="post-date">2024年8月28日</p>
+                <p class="post-category">カテゴリ2</p>
+                <p>ここに記事の内容が入ります。</p>
+            </article>
+
+            <!-- 追加のブログ記事も同様の構造で記述 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>©td | <a href="https://x.com/td_synth1_990" target="_blank" rel="noopener noreferrer"><img src="../../assets/images/X_logo-white.png" width="16px" height="16px"></a> | <a href="https://soundcloud.com/user-711542494/tracks" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="../../assets/images/1x1_SoundCloudLogo_cloudmark.jpg" width="20px" height="20px"></p>
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="../../index.html">トップ</a></li>
+                <li><a href="../projects.html">関わった作品</a></li>
+                <li><a href="blog-2024.html">制作日記</a></li>
+                <li><a href="../games/games.html">ゲームプレイ日記</a></li>
+                <li><a href="../policy.html">サイトポリシー</a></li>
+                <li><a href="#">問い合わせ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/filter.js"></script>
+</body>
+</html>
