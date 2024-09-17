@@ -41,6 +41,22 @@ main {
     padding: 0 1rem;
 }
 
+.description {
+    max-width: 800px; /* コンテンツ幅を制限し、読みやすく */
+    margin: 20px auto; /* 上下の余白と中央揃え */
+    padding: 20px; /* 内側の余白 */
+    font-size: 1.1em; /* 少し大きめのフォントサイズ */
+    line-height: 1.6; /* 行間を広くして読みやすく */
+    background-color: #f9f9f9; /* 背景色で区別 */
+    border-radius: 8px; /* 角を丸めて柔らかい印象に */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
+
+.description p {
+    margin-bottom: 16px; /* 段落ごとの余白を設定 */
+    font-size: 0.9em; 
+}
+
 .tags-container {
     text-align: center;
     margin-bottom: 1rem;
@@ -109,6 +125,45 @@ footer {
     bottom: 0;
 }
 
+.footer-sitemap {
+    margin-bottom: 1rem;
+}
+
+.footer-sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-sitemap ul li {
+    display: inline;
+}
+
+.footer-sitemap ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-sitemap ul li a:hover {
+    text-decoration: underline;
+}
+
+.image-and-text {
+    display: flex;
+    align-items: center; /* 画像とテキストの縦位置を中央に揃える */
+}
+
+.image-and-text img {
+    margin-right: 10px; /* 画像とテキストの間の余白 */
+}
+
+
+/* デスクトップおよびスマートフォンの幅に応じたレイアウト調整 */
+
 @media (max-width: 1920px) {
     main {
         max-width: 1000px;
@@ -122,8 +177,130 @@ footer {
     .track {
         width: calc(100% - 2rem);
     }
+    .footer-sitemap ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
+/* スマートフォン用の説明文の調整 */
+@media screen and (max-width: 750px) {
+    .description {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px; /* 必要に応じて変更 */
+}
+
+
+/* プロジェクト紹介ページ用のスタイル */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 1rem;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.project-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.project-content a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-content a:hover {
+    background-color: #5a6268;
+}
+
+/* メディアギャラリー用のスタイル */
+.media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.media-gallery img,
+.media-gallery iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.media-gallery iframe {
+    flex: 1 1 100%;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 750px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .media-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-gallery iframe {
+        width: 100%;
+        height: auto;
+    }
+}
 
 <!-- ゲームログ用 -->
 
@@ -283,4 +460,91 @@ footer {
     margin-bottom: 0; /* 本文の下部余白をなくす */
     font-size: 1rem; /* 本文のフォントサイズを指定 */
     color: #222; /* 本文の文字色を指定 */
+}
+
+/* ブログ用 */
+
+.blog-nav {
+    background-color: #f4f4f4; /* 背景色を指定 */
+    padding: 10px 0; /* 上下のパディングを設定 */
+    text-align: center; /* テキストを中央揃え */
+    margin-bottom: 20px; /* 下部に余白を追加 */
+}
+
+.blog-nav ul {
+    list-style: none; /* リストのスタイルを削除 */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* リストアイテムを横に並べて中央揃え */
+    gap: 15px; /* リストアイテム間のスペースを設定 */
+}
+
+.blog-nav ul li {
+    display: inline; /* リストアイテムをインライン表示 */
+}
+
+.blog-nav ul li a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: #007bff; /* リンクの色を指定 */
+    font-weight: bold; /* フォントを太字に */
+}
+
+.blog-nav ul li a:hover {
+    color: #0056b3; /* ホバー時のリンク色を変更 */
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+.blog-filters {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog-filters button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blog-filters button:hover {
+    background-color: #0056b3;
+}
+
+#blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.post-date,
+.post-category {
+    color: #555;
+    font-size: 0.9em;
+}
+
+@media (max-width: 750px) {
+    .blog-filters {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #blog-container {
+        gap: 1rem;
+    }
 }
