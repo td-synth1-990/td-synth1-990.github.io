@@ -12,3 +12,12 @@ $(document).ready(function() {
         }
     });
 });
+
+function togglePolicy() {
+    var policy = document.getElementById("policy");
+    if (policy.style.display === "none") {
+        policy.style.display = "block";
+    } else {
+        policy.style.display = "none";
+    }
+}
