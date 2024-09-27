@@ -131,7 +131,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -237,6 +237,27 @@ footer {
     }
 }
 
+/* スマートフォン用のフッターの調整 */
+@media (max-width: 750px) {
+    .footer {
+        padding: 10px;
+        font-size: 0.8em; /* フッター内の文字サイズを小さくします */
+    }
+    
+    .footer-sitemap ul {
+        padding: 0;
+        font-size: 0.9em; /* サイトマップの文字サイズを調整 */
+    }
+    
+    .footer-sitemap ul li {
+        margin: 0; /* 要素間の余白を減らします */
+    }
+    
+    .footer .copyright {
+        font-size: 0.75em; /* 著作権表示のフォントサイズをさらに小さく */
+    }
+}
+
 .video-container {
     display: flex;
     justify-content: center;
@@ -313,6 +334,11 @@ footer {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    position: relative; /* レスポンシブ対応のための調整 */
+    padding-bottom: 56.25%; /* 16:9 アスペクト比のプレイヤー表示対応 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .media-gallery img,
@@ -323,6 +349,11 @@ footer {
 }
 
 .media-gallery iframe {
+    position: absolute; /* iframeを親要素内で絶対位置に配置 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     flex: 1 1 100%;
 }
 
@@ -340,6 +371,7 @@ footer {
     .media-gallery {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 56.25%; /* スマホでも16:9 アスペクト比に対応 */
     }
 
     .media-gallery iframe {
