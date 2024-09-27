@@ -3,44 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <meta name="description" content="無料でゲームや動画に使える音楽素材をダウンロードできます。You can download music for your projects.">
+    <meta name="keywords" content="ゲーム音楽, 無料音楽素材, RPG開発, RPGツクール, RPG Maker, SRPG Studio, VRワールド用音楽">
+    <title>td 音楽素材 / トップ</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>サイト名未定…</h1>
+        <h1>td</h1>
     </header>
     <nav>
         <ul>
             <li><a href="index.html">トップ / music</a></li>
-            <li><a href="pages/projects.html">関わった作品 / projects</a></li>
+            <li><a href="pages/projects.html">参加した作品 / projects</a></li>
             <li><a href="pages/blog/blog-2024.html">制作日記 / blog</a></li>
-            <li><a href="pages/games/games.html">ゲームプレイ日記 / gamelog</a></li>
+            <li><a href="pages/games/gamelog.html">ゲームプレイ日記 / gamelog</a></li>
         </ul>
     </nav>
+    
     <main>
-        <h2>トップ</h2>
+        <h2>トップ / music</h2>
         <div class="description">
                 <p>ここでは、私tdが作った楽曲を無料で試聴・ダウンロード（DL）できます。DLした楽曲は、ゲームや動画、ポッドキャストのBGMなどらゆる作品にお使いいただけます。</p>
                 <p>MP3とOGG、2つのファイル形式でDLできます。OGGはループ設定をしてありますので、対応しているツール(SRPG Studio、RPGツクールシリーズ等)で使用すると適切なところでループします。</p>
         </div>
 
-        <div class="description">
+        <!-- <div class="description">
                 <p>▼どんな音楽があるか、いくつかピックアップしてダイジェストで聴けるようにしたので聴いてみてください。好みが合えば良いですね。</p>
+        </div> -->
+
+        <button onclick="togglePolicy()">利用規約を表示</button>
+        <div id="policy" style="display:none;">
+          <div class="termsofuse">
+              <ul>
+                 <li>Q. 使用報告は要るの？</li>
+                     <p><b>できれば</b>で大丈夫です。<a href="https://x.com/td_synth1_990">XのリプライやDM</a>、<a href="https://docs.google.com/forms/d/e/1FAIpQLSf1ckzPJBiSVKJxvnfkTQ8l5ltq9RybevQwU52KbACS15hXZg/viewform?usp=sf_link">Googleフォーム</a>で報告していただければ、その作品の宣伝（Xでのリポストなど）にも協力できるほか、作者にとって励みになります。</p>      
+                 <li>Q. 商用利用や改変してもいいの？</li>
+                     <p><b>OK</b>です。商用利用可、改変についてもAudacityなどのソフトを使い、楽曲を長くするなどの軽微な編集は行っていただいて構いません。</p>
+                 <li>Q. 著作権は？</li>
+                     <p>楽曲の著作権は作曲者である私tdに帰属します。許可なく楽曲を販売したり、他のサイトでダウンロードできる状態にしたりすること等は禁止です。</p>
+                 <li>Q. クレジット表示は？</li>
+                     <p><b>td</b>が作曲者であることを明示していただきたいです。サイトのURLも記載していただけると更にハッピーです。</p>
+                 <li>Q. 使ってはいけない場合ってある？</li>
+                     <p><b>公序良俗に反する、法令に違反する、著作者や他者を貶める</b>ものであると著作者が判断した場合は利用停止を求める場合があります。</p> 
+              </ul>
+           </div>
         </div>
 
-        <div class="description">
-            <ul>
-               <li>Q. 使用報告は要るの？</li>
-                    <p><b>できれば</b>で大丈夫です。<a href="https://x.com/td_synth1_990">XのリプライやDM</a>、<a href="https://docs.google.com/forms/d/e/1FAIpQLSf1ckzPJBiSVKJxvnfkTQ8l5ltq9RybevQwU52KbACS15hXZg/viewform?usp=sf_link">Googleフォーム</a>で報告していただければ、その作品の宣伝（Xでのリポストなど）にも協力できるほか、作者にとって励みになります。</p>      
-               <li>Q. 商用利用や改変してもいいの？</li>
-                    <p><b>OK</b>です。商用利用可、改変についてもAudacityなどのソフトを使い、楽曲を長くするなどの編集を行っていただいて構いません。</p>
-               <li>Q. 著作権はあるの？</li>
-                    <p><b>あります。</b>楽曲の著作権は作曲者である私tdに帰属します。許可なく楽曲を販売したり、他のサイトでダウンロードできる状態にしたりすること等は禁止いたします。</p>
-               <li>Q. クレジット表示は？</li>
-                    <p><b>td</b>が作曲者であることを明示していただけるとうれしいです（サイト名は今まだ決まっていないので……）。サイトのURLも記載していただけると更にハッピーです。</p>
-            </ul>
-        </div>
+
 
         <p>タグをクリックするとソートできます。</p>
         <div class="tags-container">
@@ -48,70 +58,243 @@
             <span class="filter-tag" data-tag="サイバー">サイバー</span>
             <span class="filter-tag" data-tag="悲しい">悲しい</span>
             <span class="filter-tag" data-tag="熱い">熱い</span>
+            <span class="filter-tag" data-tag="あやしい">あやしい</span>
+            <br>
+            <span class="filter-tag" data-tag="楽しい">楽しい</span>
+            <span class="filter-tag" data-tag="けだるい">けだるい</span>
             <span class="filter-tag" data-tag="神秘的">神秘的</span>
+            <span class="filter-tag" data-tag="民族的">民族的</span>
+            <span class="filter-tag" data-tag="日常">日常</span>
+            <span class="filter-tag" data-tag="旅">旅</span>
         </div>
 
         <div class="track-list">
-            <div class="track" data-tags="熱い,サイバー">
-                <h3>閃光、青くはじけて</h3>
+            <div class="track" data-tags="神秘的,サイバー">
+                <h3>声なき街</h3>
                 <audio controls>
-                    <source src="assets/audio/mp3/td_SparkingBlue.mp3" type="audio/mp3">
-                    <source src="assets/audio/file1.ogg" type="audio/ogg">
+                    <source src="assets/audio/mp3/td_SilentCity.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_SilentCity.ogg" type="audio/ogg">
                     お使いのブラウザはオーディオタグをサポートしていません。
                 </audio>
                 <div class="download-buttons">
-                    <a href="assets/audio/mp3/td_SparkingBlue.mp3" download="td_SparkingBlue.mp3">MP3</a>
-                    <a href="assets/audio/file1.ogg" download>OGG</a>
+                    <a href="assets/audio/mp3/td_SilentCity.mp3" download="td_SilentCity.mp3">MP3</a>
+                    <a href="assets/audio/ogg/td_SilentCity.ogg" download>OGG</a>
                 </div>
-                <p>タグ: <span class="tags">熱い,サイバー</span></p>
-                <p class="description">熱さのある楽曲。1分48秒で1ループ</p>
+                <p>タグ: <span class="tags">神秘的,サイバー</span></p>
+                <p class="description">近未来の街のテーマという感じ</p>
+            </div>
+
+            <div class="track" data-tags="神秘的">
+                <h3>水中街の光</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_TownUnderTheWater.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_TownUnderTheWater.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_TownUnderTheWater.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_TownUnderTheWater.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">神秘的</span></p>
+                <p class="description">水の中にある街という感じ</p>
+            </div>
+
+            <div class="track" data-tags="あやしい">
+                <h3>電気と鉄の暮らし</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_SteelAndElectricity.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_SteelAndElectricity.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_SteelAndElectricity.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_SteelAndElectricity.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">あやしい</span></p>
+                <p class="description">ちょっと怪しげな雰囲気。潜入っぽいかも</p>
+            </div>
+
+            <div class="track" data-tags="神秘的,悲しい">
+                <h3>機械の涙 形見のメロディ</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_TearOfMachine.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_TearOfMachine.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_TearOfMachine.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_TearOfMachine.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">神秘的,悲しい</span></p>
+                <p class="description">役目を終えて眠りにつくマシンその穏やかな心<br>※ループしません</p>
             </div>
             
+            <div class="track" data-tags="楽しい,日常">
+                <h3>機械の笑顔 にぎわいのメロディ</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_SmileOfMachine.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_SmileOfMachine.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_SmileOfMachine.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_SmileOfMachine.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">楽しい,日常</span></p>
+                <p class="description">「機械の涙～」の明るいバージョン</p>
+            </div>
+
+            <div class="track" data-tags="楽しい, サイバー">
+                <h3>機械のダンス 全身のメロディ</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_DanceOfMachine.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_DanceOfMachine.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_DanceOfMachine.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_DanceOfMachine.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">楽しい, サイバー</span></p>
+                <p class="description">「機械の涙～」の明るいバージョン2</p>
+            </div>
+
+            <div class="track" data-tags="神秘的">
+                <h3>遺跡の詩 ロタンの調べ</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_RuinSong.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_RuinSong.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_RuinSong.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_RuinSong.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">神秘的</span></p>
+                <p class="description">ちょっと不思議で神秘的な曲。ロ短調なのでロタン</p>
+            </div>       
+
             <div class="track" data-tags="熱い,サイバー">
                 <h3>CyberSaber</h3>
                 <audio controls>
                     <source src="assets/audio/mp3/td_CyberSaber.mp3" type="audio/mp3">
-                    <source src="assets/audio/file2.ogg" type="audio/ogg">
+                    <source src="assets/audio/ogg/td_CyberSaber.ogg" type="audio/ogg">
                     お使いのブラウザはオーディオタグをサポートしていません。
                 </audio>
                 <div class="download-buttons">
                     <a href="assets/audio/mp3/td_CyberSaber.mp3" download>MP3</a>
-                    <a href="assets/audio/file2.ogg" download>OGG</a>
+                    <a href="assets/audio/ogg/td_CyberSaber.ogg" download>OGG</a>
                 </div>
                 <p>タグ: <span class="tags">熱い,サイバー</span></p>
-                <p class="description">サイバーな感じ</p>
+                <p class="description">熱くサイバーな感じ</p>
             </div>
             
             <div class="track" data-tags="神秘的">
-                <h3>遺跡の詩、ロタンの調べ</h3>
-                <audio controls>
-                    <source src="assets/audio/mp3/td_SongOfRotan.mp3" type="audio/mp3">
-                    <source src="assets/audio/file3.ogg" type="audio/ogg">
-                    お使いのブラウザはオーディオタグをサポートしていません。
-                </audio>
-                <div class="download-buttons">
-                    <a href="assets/audio/mp3/td_SongOfRotan.mp3" download>MP3</a>
-                    <a href="assets/audio/file3.ogg" download>OGG</a>
-                </div>
-                <p>タグ: <span class="tags">神秘的</span></p>
-                <p class="description">ちょっと不思議で神秘的な曲</p>
-            </div>
-            
-            <div class="track" data-tags="神秘的,悲しい">
-                <h3>珊×瑚=15</h3>
+                <h3>珊×瑚=15（さんごじゅうご）</h3>
                 <audio controls>
                     <source src="assets/audio/mp3/td_Coral15.mp3" type="audio/mp3">
-                    <source src="assets/audio/file4.ogg" type="audio/ogg">
+                    <source src="assets/audio/ogg/td_Coral15.ogg" type="audio/ogg">
                     お使いのブラウザはオーディオタグをサポートしていません。
                 </audio>
                 <div class="download-buttons">
                     <a href="assets/audio/mp3/td_Coral15.mp3" download>MP3</a>
-                    <a href="assets/audio/file4.ogg" download>OGG</a>
+                    <a href="assets/audio/ogg/td_Coral15.ogg" download>OGG</a>
                 </div>
-                <p>タグ: <span class="tags">神秘的,悲しい</span></p>
-                <p class="description">神秘的でちょっと悲しさもある楽曲</p>
+                <p>タグ: <span class="tags">神秘的</span></p>
+                <p class="description">神秘的でちょっと悲しさもある楽曲。水中っぽい</p>
             </div>
 
+            <div class="track" data-tags="熱い,サイバー">
+                <h3>閃光、青くはじけて</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_SparkingBlue.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_SparkingBlue.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_SparkingBlue.mp3" download="td_SparkingBlue.mp3">MP3</a>
+                    <a href="assets/audio/ogg/td_SparkingBlue.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">熱い,サイバー</span></p>
+                <p class="description">弾ける閃光！　熱い楽曲</p>
+            </div>
+
+            <div class="track" data-tags="熱い">
+                <h3>始まりを告げてくれ</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_TellMeTheStart.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_TellMeTheStart.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_TellMeTheStart.mp3" download="td_SparkingBlue.mp3">MP3</a>
+                    <a href="assets/audio/ogg/td_TellMeTheStart.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">熱い</span></p>
+                <p class="description">始まりの鐘が鳴る！<br>熱い楽曲</p>
+            </div>
+
+            <div class="track" data-tags="日常,けだるい">
+                <h3>常日頃日常</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_EverydayLife.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_EverydayLife.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_EverydayLife.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_EverydayLife.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">日常,けだるい</span></p>
+                <p class="description">な～んか気怠いって感じ～</p>
+            </div>
+
+            <div class="track" data-tags="民族的,旅">
+                <h3>地の民がゆく</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_PeopleOfTheEarth.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_PeopleOfTheEarth.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_PeopleOfTheEarth.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_PeopleOfTheEarth.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">民族的,旅</span></p>
+                <p class="description">アンデス系民族音楽風。<br>スーファミ感あり</p>
+            </div>
+            
+            <div class="track" data-tags="悲しい,あやしい">
+                <h3>ザンネンな帰結<br>～Game Over～</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_GameOver01.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_GameOver01.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_GameOver01.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_GameOver01.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">悲しい,あやしい</span></p>
+                <p class="description">悲しくもちょっとコミカルなゲームオーバー</p>
+            </div>
+          
+            <div class="track" data-tags="悲しい">
+                <h3>あり得ぬ帰結<br>～Game Over 2～</h3>
+                <audio controls>
+                    <source src="assets/audio/mp3/td_Gameover02.mp3" type="audio/mp3">
+                    <source src="assets/audio/ogg/td_GameOver02.ogg" type="audio/ogg">
+                    お使いのブラウザはオーディオタグをサポートしていません。
+                </audio>
+                <div class="download-buttons">
+                    <a href="assets/audio/mp3/td_GameOver02.mp3" download>MP3</a>
+                    <a href="assets/audio/ogg/td_GameOver02.ogg" download>OGG</a>
+                </div>
+                <p>タグ: <span class="tags">悲しい</span></p>
+                <p class="description">悲壮感あるゲームオーバー<br>※ループしません</p>
+            </div>
+          
+        <!-- 
             <div class="track" data-tags="神秘的,悲しい">
                 <h3>楽曲タイトル</h3>
                 <audio controls>
@@ -125,22 +308,8 @@
                 </div>
                 <p>タグ: <span class="tags">タグ,タグ</span></p>
                 <p class="description">説明文</p>
-            </div>
-
-            <div class="track" data-tags="神秘的,悲しい">
-                <h3>楽曲タイトル</h3>
-                <audio controls>
-                    <source src="assets/audio/mp3/__.mp3" type="audio/mp3">
-                    <source src="assets/audio/ogg/file4.ogg" type="audio/ogg">
-                    お使いのブラウザはオーディオタグをサポートしていません。
-                </audio>
-                <div class="download-buttons">
-                    <a href="assets/audio/mp3/__.mp3" download>MP3</a>
-                    <a href="assets/audio/ogg/file4.ogg" download>OGG</a>
-                </div>
-                <p>タグ: <span class="tags">タグ,タグ</span></p>
-                <p class="description">説明文</p>
-            </div>
+            </div> 
+        -->
             
         </div>
     </main>
@@ -150,11 +319,11 @@
             <div class="footer-sitemap">
                 <ul>
                     <li><a href="index.html">トップ</a></li>
-                    <li><a href="pages/projects.html">関わった作品</a></li>
+                    <li><a href="pages/projects.html">参加した作品</a></li>
                     <li><a href="pages/blog/blog-2024.html">制作日記</a></li>
-                    <li><a href="pages/games/games.html">ゲームプレイ日記</a></li>
+                    <li><a href="pages/games/gamelog.html">ゲームプレイ日記</a></li>
                     <li><a href="pages/policy.html">サイトポリシー</a></li>
-                    <li><a href="#">問い合わせ</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf1ckzPJBiSVKJxvnfkTQ8l5ltq9RybevQwU52KbACS15hXZg/viewform?usp=sf_link">問い合わせ</a></li>
                 </ul>
             </div>
     </footer>
