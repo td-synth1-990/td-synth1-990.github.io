@@ -57,6 +57,17 @@ main {
     font-size: 0.9em; 
 }
 
+.termsofuse {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    background-color: #f5efd0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .tags-container {
     text-align: center;
     margin-bottom: 1rem;
@@ -66,14 +77,14 @@ main {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #333;
     color: white;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .filter-tag:hover {
-    background-color: #0056b3;
+    background-color: #050607;
 }
 
 .track-list {
@@ -105,14 +116,14 @@ main {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #9e059e;
     color: white;
     text-decoration: none;
     border-radius: 4px;
 }
 
 .download-buttons a:hover {
-    background-color: #0056b3;
+    background-color: #eb03b8;
 }
 
 footer {
@@ -160,6 +171,41 @@ footer {
 .image-and-text img {
     margin-right: 10px; /* 画像とテキストの間の余白 */
 }
+
+/* パンくず */
+.breadcrumb-nav {
+    background-color: transparent; /* 背景色をクリアに */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumb {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .breadcrumb-item {
+    margin-right: 0.5rem;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumb-item a:hover {
+    color: #0056b3;
+  }
+  
+  .breadcrumb-item::after {
+    content: ">";
+    margin-left: 0.5rem;
+  }
+  
+  .breadcrumb-item:last-child::after {
+    content: "";
+  }
 
 
 /* デスクトップおよびスマートフォンの幅に応じたレイアウト調整 */
