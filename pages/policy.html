@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="サイトポリシー">
+    <meta name="keywords" content="ゲーム音楽, 無料音楽素材, RPG開発, SRPG Studio">
     <title>サイトポリシー</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <h1>サイト名未定…</h1>
+        <h1>td</h1>
     </header>
     <nav>
         <ul>
             <li><a href="../index.html">トップ / music</a></li>
-            <li><a href="../pages/projects.html">関わった作品 / projects</a></li>
+            <li><a href="../pages/projects.html">参加した作品 / projects</a></li>
             <li><a href="../pages/blog/blog-2024.html">制作日記 / blog</a></li>
-            <li><a href="../pages/games/games.html">ゲームプレイ日記 / gamelog</a></li>
+            <li><a href="../pages/games/gamelog.html">ゲームプレイ日記 / gamelog</a></li>
         </ul>
     </nav>
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">トップ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">サイトポリシー / policy</li>
+        </ol>
+    </nav>
+    <h2>サイトポリシー</h2>
     <main>
         <section>
             <h2>1. 著作権について</h2>
@@ -27,9 +36,22 @@
 
         <section>
             <h2>2. 楽曲の使用について</h2>
-            <p>当サイトで提供している楽曲は、フリーでダウンロード可能です。ダウンロードした楽曲は、ゲームや動画などのコンテンツにご自由にご利用いただけます。楽曲を使用する場合は、原則として著作権者であるtdのクレジットをゲームの取扱説明書や動画の概要欄など、ユーザーの目の届く箇所に明記してください。また、楽曲の使用報告は任意ですが、X（旧Twitter）やGoogleフォームなどでご報告いただけると幸いです。報告されたコンテンツは、当サイトやtdのSNSで紹介させていただく場合があります。</p>
+            <p>トップページに記載している通りですが、当サイトで提供している楽曲は、フリーでダウンロード可能です。ダウンロードした楽曲は、ゲームや動画などのコンテンツにご自由にご利用いただけます。
+                また、商用利用や改変も可能ですが、許可なく楽曲を販売したり、他のサイトでダウンロードできる状態にしたりすること等は禁止いたします。</p>
+            <p>楽曲を使用する場合は、原則として著作権者であるtdのクレジットをゲームの取扱説明書や動画の概要欄など、ユーザーの目の届く箇所に明記してください。
+                また、楽曲の使用報告は任意ですが、X（旧Twitter）やGoogleフォームなどでご報告いただけると幸いです。報告されたコンテンツは、当サイトやtdのSNSで紹介させていただく場合があります。</p>
         </section>
-
+        <button onclick="togglePolicy()">著作権フリーじゃないの？</button>
+        <div id="policy" style="display:none;">
+          <div class="termsofuse">
+            <p>著作権は放棄していません。</p>
+                <p>これは例えばAudiostockのように「著作権フリー」をうたっているサイトと比べると面倒なように感じるかもしれませんが、
+                <b>Audiostockの「著作権フリー」は実際には著作権を放棄しておらず</b>、あくまで<u>「ロイヤリティフリー」（=事前に取り決められた使用許諾範囲内であれば、追加の使用料（ロイヤリティー）の発生が免除されている著作物）
+                と同じもの</u>として定義しているということが公式サイトにて明言されています。</p>
+                <p>また一般的にも「著作権フリー」と「ロイヤリティフリー」が混同されることがありますが、使用料や申告をしなくてよいだけで著作権自体は放棄されていないということは往々にしてあります。</p>
+                <p>そういった意味で、原則クレジット表示はしていただきたいのですが利用料不要で申告も任意ですので、一般的なフリー音楽素材サイトと変わりないと考えています。</p>
+        　</div>
+        </div>
         <section>
             <h2>3. リンクについて</h2>
             <p>当サイトへのリンクは原則として自由です。ただし、公序良俗に反する内容や誤解を招く可能性のあるリンクの貼り方はご遠慮ください。</p>
@@ -37,7 +59,11 @@
 
         <section>
             <h2>4. 免責事項</h2>
-            <p>当サイトに掲載されている情報については、正確性を期すよう努めていますが、情報の内容についての正確性や完全性を保証するものではありません。利用者が当サイトの情報を使用して行った行為について、一切の責任を負いかねますのでご了承ください。</p>
+            <p>当サイトに掲載されている情報については、正確性を期すよう努めていますが、情報の内容についての正確性や完全性を保証するものではありません。利用者が当サイトの情報を使用して行った行為について、一切の責任を負いかねますのでご了承ください。
+            </p>
+            <p>また、当サイトで提供されるファイルは、慎重に管理されていますが、ダウンロードに際し、万が一ウイルス感染やデータの消失、機器の故障等の問題が発生した場合でも、当サイトは一切の責任を負いかねます。
+                ご自身の責任においてダウンロードを行っていただくようお願い申し上げます。
+            </p>
         </section>
 
         <section>
@@ -51,15 +77,16 @@
             <div class="footer-sitemap">
                 <ul>
                     <li><a href="../index.html">トップ</a></li>
-                    <li><a href="../pages/projects.html">関わった作品</a></li>
+                    <li><a href="../pages/projects.html">参加した作品</a></li>
                     <li><a href="../pages/blog/blog-2024.html">制作日記</a></li>
-                    <li><a href="../pages/games/games.html">ゲームプレイ日記</a></li>
+                    <li><a href="../pages/games/gamelog.html">ゲームプレイ日記</a></li>
                     <li><a href="policy.html">サイトポリシー</a></li>
-                    <li><a href="#">問い合わせ</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf1ckzPJBiSVKJxvnfkTQ8l5ltq9RybevQwU52KbACS15hXZg/viewform?usp=sf_link">問い合わせ</a></li>
                 </ul>
             </div>
     </footer>
     <br><br><br>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
