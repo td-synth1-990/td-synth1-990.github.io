@@ -1,17 +1,22 @@
 body {
     background-color: #ffffff; /* ページ全体の背景色を白に設定 */
     font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #eb03b8;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
+    transition: color 0.3s ease;
     background-color: #333;
     color: white;
-    padding: 1rem;
+    background: linear-gradient(135deg, #333, #555);
+    padding: 1.5rem;
     text-align: center;
 }
+
 
 nav {
     background-color: #444;
@@ -55,6 +60,14 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
+h1 {
+    font-family: 'Roboto Slab', serif; /* Google Fontsから選んだ例 */
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+
 
 .description {
     max-width: 800px; /* コンテンツ幅を制限し、読みやすく */
