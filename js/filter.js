@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 投稿のフィルタリング関数（カテゴリ）
+    // 記事のフィルタリング関数（カテゴリ）
     function filterPosts(category) {
         const posts = document.querySelectorAll('.blog-post');
         posts.forEach(post => {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 投稿の月別フィルタリング関数
+    // 記事の月別フィルタリング関数
     function filterPostsByMonth(month) {
         const posts = document.querySelectorAll('.blog-post');
         posts.forEach(post => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 投稿の日付順ソート関数
+    // 記事の日付順ソート関数
     function sortPosts(order) {
         const container = document.getElementById('blog-container');
         const posts = Array.from(container.getElementsByClassName('blog-post'));
