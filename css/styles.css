@@ -644,6 +644,16 @@ footer {
     margin-top: 0;
 }
 
+.blog-post h2 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-post h2 a:hover {
+    color: #0056b3;
+}
+
 .post-date,
 .post-category {
     color: #555;
