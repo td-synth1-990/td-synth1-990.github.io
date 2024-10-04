@@ -208,19 +208,6 @@ footer {
     
 }
 
-.figure-blog {
-    margin: 0;
-    padding: 0;
-    max-width: 100%; /* figure自体の幅をコンテナに合わせる */
-    overflow: hidden; /* はみ出さないようにする */
-}
-
-.figure-blog img {
-    max-width: 100%; /* 画像の幅をコンテナ内に収める */
-    height: auto; /* 高さを自動調整して画像の縦横比を保つ */
-    display: block; /* 余計なスペースを取り除くためにブロック要素にする */
-    margin: 0 auto; /* 画像を中央揃えにする（必要であれば） */
-}
 
 /* パンくず */
 .breadcrumb-nav {
@@ -674,6 +661,41 @@ footer {
     color: #555;
     font-size: 0.9em;
 }
+
+.figure-blog {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* figure自体の幅をコンテナに合わせる */
+    overflow: hidden; /* はみ出さないようにする */
+}
+
+.figure-blog img {
+    max-width: 100%; /* 画像の幅をコンテナ内に収める */
+    height: auto; /* 高さを自動調整して画像の縦横比を保つ */
+    display: block; /* 余計なスペースを取り除くためにブロック要素にする */
+    margin: 0 auto; /* 画像を中央揃えにする（必要であれば） */
+}
+
+.article-navigation {
+    text-align: center; /* テキストを中央に寄せる */
+    margin: 2rem 0; /* 上下に余白を追加 */
+    font-size: 1.1rem; /* フォントサイズを少し大きく */
+}
+
+.article-navigation a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: #007bff; /* リンクの色を設定 */
+    margin: 0 1rem; /* リンク間のスペースを設定 */
+}
+
+.article-navigation a:hover {
+    color: #0056b3; /* ホバー時のリンク色を変更 */
+}
+
+.article-navigation a:visited {
+    color: #551A8B; /* 訪問済みリンクの色を設定 */
+}
+
 
 @media (max-width: 750px) {
     .blog-filters {
