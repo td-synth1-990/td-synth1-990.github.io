@@ -205,6 +205,21 @@ footer {
 
 .image-and-text img {
     margin-right: 10px; /* 画像とテキストの間の余白 */
+    
+}
+
+.figure-blog {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* figure自体の幅をコンテナに合わせる */
+    overflow: hidden; /* はみ出さないようにする */
+}
+
+.figure-blog img {
+    max-width: 100%; /* 画像の幅をコンテナ内に収める */
+    height: auto; /* 高さを自動調整して画像の縦横比を保つ */
+    display: block; /* 余計なスペースを取り除くためにブロック要素にする */
+    margin: 0 auto; /* 画像を中央揃えにする（必要であれば） */
 }
 
 /* パンくず */
@@ -670,4 +685,20 @@ footer {
     #blog-container {
         gap: 1rem;
     }
+}
+
+/*フェードイン*/
+.fade-in {
+    width: 50%; /* 要素の幅を設定 */
+    margin: 0 auto; /* 横方向の余白を自動で設定し、中央寄せ */
+    text-align: center; /* コンテンツのテキストを中央寄せ */
+    padding: 20px; /* 任意で余白を設定 */
+    background-color: #f0f0f0; /* 任意で背景色を設定 */
+    border-radius: 8px; /* 任意で角丸を設定 */
+    transition: opacity 0.5s ease-in-out; /* フェードイン用のトランジション */
+    opacity: 0; /* 初期は透明 */
+}
+
+.fade-in.show {
+    opacity: 1;
 }
