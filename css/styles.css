@@ -69,6 +69,29 @@ h1 {
     letter-spacing: 0.1rem;
 }
 
+.update-history .scrollable-history {
+    max-height: 200px; /* 固定サイズを指定 */
+    overflow-y: auto;  /* 縦スクロールを有効にする */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.update-history ul {
+    list-style-type: none; /* リストのスタイルを調整 */
+    padding: 0;
+    margin: 0;
+}
+
+.update-history ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.update-history ul li:last-child {
+    border-bottom: none;
+}
+
 
 .description {
     max-width: 800px; /* コンテンツ幅を制限し、読みやすく */
