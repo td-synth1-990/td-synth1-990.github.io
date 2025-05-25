@@ -680,6 +680,20 @@ footer {
     color: #0056b3;
 }
 
+.blog-page h3 {
+    border-left: 4px solid #eb03b8; /* 太さ、スタイル、色をまとめて指定 */
+    padding-left: 0.75rem; /* 見出しと線の間に余白 */
+    font-size: 1.5rem;
+    background-color: #f9f9f9; /* 任意：背景色をつける場合 */
+}
+
+.blog-page h4 {
+    border-left: 3px solid #555;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+}
+
 .post-date,
 .post-category {
     color: #555;
