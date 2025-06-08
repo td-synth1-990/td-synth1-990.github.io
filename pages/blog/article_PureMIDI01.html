@@ -93,14 +93,14 @@
                 </p>
                 <h4>(1)MSGSの格納場所を確認する</h4>
                 <p>調べてみたところMSGSは「<b>gm.dls</b>」という名前のファイルのようで、その格納場所は<b>C:\Windows\System32\drivers</b>でした。
-                <figure-blog><img src="../../assets/images/blog/puremidi01.png"></figure>
+                <figure class="figure-blog"><img src="../../assets/images/blog/puremidi01.png"></figure>
                 </p>
                 <h4>(2)gm.dlsをgm.sf2に変換する</h4>
                 <p>このgm.glsですが、後述するSforzandoなどのVSTで読み込めるようにするためにもこれをsf2というファイル形式に変換する必要があります。
                     具体的には<b>「Viena64 SoundFont Editor」</b>というフリーソフトを使います。
                     ダウンロードしたViena64の「Open File」から、先ほど確認したディレクトリにあるgm.dlsを選択します。その後、「File」から「Save As」を選択することで<b>「gm.sf2」</b>として保存できます。
                     保存先は普段何かプラグインなりサウンドフォントを保存している場所で良いでしょう。
-                <figure-blog><img src="../../assets/images/blog/puremidi02.png"></figure>
+                <figure class="figure-blog"><img src="../../assets/images/blog/puremidi02.png"></figure>
                 </p>
                 <h4>(3)サウンドフォントを読み込めるVSTプラグインを導入する</h4>
                 <p>僕はSforzandoというフリーのものを使っています。他にも、とにかくsf2を読み込めるものであれば良いと思います。他のプラグインと同様にダウンロードしてDAWで使えるようにしましょう。
@@ -111,7 +111,7 @@
                     これも他にプラグインなりサウンドフォントを保存している場所で良いでしょう。これで読み込めたと思います。
                 </p>
                 <p>自分の環境では「converted」にこのgm.sf2があるので、ここからPianoなどの音色を選んでいくわけです。
-                <figure-blog><img src="../../assets/images/blog/puremidi03.png"></figure>
+                <figure class="figure-blog"><img src="../../assets/images/blog/puremidi03.png"></figure>
                 <br>正直、Dominoなど他のMIDIシーケンサーで使用する場合と比較して使いやすいのかということについては言及できませんが、まあ使い慣れたDAWでMSGSを使おうというときにこの記事が参考になればと思います。
                 </p>
                 <p>
