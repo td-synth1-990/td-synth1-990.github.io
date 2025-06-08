@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-13CE1JZ7XJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'G-13CE1JZ7XJ');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DAWでMSGS(Microsoft GS Wavetable SW Synth)を使用する方法について">
+    <meta name="keywords" content="ゲーム音楽, 無料音楽素材, Pure MIDI, MSGS, Microsoft GS Wavetable SW Synth, Sforzando">
+
+    <meta property="og:title" content="td ブログ | " />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://td-synth1-990.github.io/assets/images/td_profile.png" />
+    <meta property="og:url" content="https://td-synth1-990.github.io/pages/blog/blog-2024.html" />
+    <meta property="og:type" content="article" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="td ブログ | " />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://td-synth1-990.github.io/assets/images/td_profile.png" />
+
+    <title>制作日記 / Blog</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="blog-page">
+    <header>
+        <h1>tdの音楽素材サイト</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">トップ / music</a></li>
+            <li><a href="../projects.html">参加した作品 / projects</a></li>
+            <li><a href="blog.html">制作日記 / blog</a></li>
+            <li><a href="../games/gamelog.html">ゲームプレイ日記 / gamelog</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">トップ</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">制作日記 / blog</a></li>
+          <li class="breadcrumb-item active" aria-current="page">2025年6月8日</li>
+        </ol>
+    </nav>
+
+    <main>
+        <h2>制作日記 / blog</h2>
+        <div id="blog-container">
+            <article class="blog-post">
+                <!--　　　　　タイトル、日付、カテゴリ　　　　　-->
+                <h3>Pure MIDI制作日記①～DAWでMSGS(Microsoft GS Wavetable SW Synth)を使用する方法</h3>
+                <p class="post-date">2025年6月8日</p>
+                <p class="post-category">音楽</p>
+                <!--　　　　　ここから本文　　　　　-->
+                <h4>MSGSとは</h4>
+                <p>この記事では「MSGS(Microsoft GS Wavetable SW Synth)」をDAWで使用する方法について記載します。そもそもMSGSとは何かということですが、これはWindowsに標準搭載されている「音のフォント」のようなものです。
+                <br><br>よく「MIDIの音はペラい、チープだ」みたいな言説がありますが、別にMIDI自体に音の良しあしがある訳ではありません。MIDIとは「何の楽器の音を、どの音階で、どのくらいの長さや強さで鳴らすか」が記載されているもの、<!--
+                -->すなわち楽譜のようなものでしかないからです。楽譜からは音は聴こえませんね。その楽譜のピアノパートをピアニストA氏が弾いて、歌をシンガーB氏が歌って……と演奏されることで音が発生します。<!--
+                -->よく言われるMIDIっぽいチープな音というのは、MIDIという楽譜を、Windowsに内臓されているシンセサイザーであるMSGSさんが鳴らした音というわけです。
+                </p>
+
+                <h4>なぜ、あえてのMSGS？</h4>
+                <p>ではなぜそのチープな音を使って作曲したいのかというと、<a href="https://x.com/to6okegao">とぼけがお氏</a>が提唱する<b>Pure MIDI</b>というジャンルの楽曲を作りたいと思ったからです。
+                <br><br>これに該当し得る音楽自体は、その呼称が生まれるずっと以前から存在しますが、冒頭で述べたような「いかにもMIDI」な音色の楽曲を表現する言葉として、近年「Pure MIDI」(=純粋なMIDI)というワードが生まれたわけですね。
+                <br><br>そう、世に数多あるシンセサイザーや、生音と遜色ないほどリッチな楽器のサンプリング音源を使用したものでなく、チープだと言われがちなMSGS（その他、SC-88Proなど）のような音源を使って音を鳴らす……<!--
+                -->これこそ生楽器にも生演奏にも真似できない美学というものがそこにある！　はずです。
+                </p>
+                
+                
+                <figure class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DwkEEuXPlsc?si=XCUcaEAyetdpt6LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>▲とぼけがお氏主宰のPure MIDIコンピレーションアルバム「<a href="https://tbkgao.bandcamp.com/album/pure-midi-volume-2">Pure MIDI Volume 2</a>」</figcaption>    
+                </figure>
+
+                
+                <p>とぼけがおさんが主宰するPure MIDIのコンピレーションアルバム、要するにそのPure MIDIというジャンルをテーマにした曲を集めたアルバムというわけですが、この度Volume3の募集がなされていたので思い切って参加することにしてみました。
+                <div class="aside-box">余談ですが「コンピレーションアルバム（コンピ）」とは、あるテーマやコンセプトにそった楽曲を収録したものです。ヒット曲を集めたいわゆるベスト盤もこれにあたりますし、<!--
+                -->よく通販などで見かける想い出のヒットソング集みたいなものもそうですね。2012年にビクターから発売された「東京こんぴ」という、東京にまつわる曲だけを集めたコンピレーションアルバムなんてのもあります。</div></p>
+                
+
+                <h4>制作環境</h4>
+                <p>わたくしtdの環境は以下の通り。
+                    <li>OS: Windows10</li>
+                    <li>DAW: Cakewalk SONAR X3（後のBandlab by Cakewalk現在のCakewalk NextとCakewalk Sonar）</li>
+                さて、DAWの中にはMSGSを簡単に読みこめるものもあるようですが、少なくともSONAR X3では最初に色々手順を踏む必要があります。Bandlabでも同じなのではないかな。
+                </p>
+                <h4>(1)MSGSの格納場所を確認する</h4>
+                <p>調べてみたところMSGSは「<b>gm.dls</b>」という名前のファイルのようで、その格納場所は<b>C:\Windows\System32\drivers</b>でした。
+                <figure-blog><img src="../../assets/images/blog/puremidi01.png"></figure>
+                </p>
+                <h4>(2)gm.dlsをgm.sf2に変換する</h4>
+                <p>このgm.glsですが、後述するSforzandoなどのVSTで読み込めるようにするためにもこれをsf2というファイル形式に変換する必要があります。
+                    具体的には<b>「Viena64 SoundFont Editor」</b>というフリーソフトを使います。
+                    ダウンロードしたViena64の「Open File」から、先ほど確認したディレクトリにあるgm.dlsを選択します。その後、「File」から「Save As」を選択することで<b>「gm.sf2」</b>として保存できます。
+                    保存先は普段何かプラグインなりサウンドフォントを保存している場所で良いでしょう。
+                <figure-blog><img src="../../assets/images/blog/puremidi02.png"></figure>
+                </p>
+                <h4>(3)サウンドフォントを読み込めるVSTプラグインを導入する</h4>
+                <p>僕はSforzandoというフリーのものを使っています。他にも、とにかくsf2を読み込めるものであれば良いと思います。他のプラグインと同様にダウンロードしてDAWで使えるようにしましょう。
+                </p>
+                <h4>(4)Sforzandoでgm.sf2を読み込む</h4>
+                <p>今回はSforzandoで説明しますね。
+                <br><br>「import」を選択して、先ほど保存したgm.sf2を開きましょう。この時恐らく英文で注釈が出ますが、要は「変換したやつを初めて使うので、まずサブフォルダを作るよ。どこに作る？」と聞いてきています。
+                    これも他にプラグインなりサウンドフォントを保存している場所で良いでしょう。これで読み込めたと思います。
+                </p>
+                <p>自分の環境では「converted」にこのgm.sf2があるので、ここからPianoなどの音色を選んでいくわけです。
+                <figure-blog><img src="../../assets/images/blog/puremidi03.png"></figure>
+                <br>正直、Dominoなど他のMIDIシーケンサーで使用する場合と比較して使いやすいのかということについては言及できませんが、まあ使い慣れたDAWでMSGSを使おうというときにこの記事が参考になればと思います。
+                </p>
+                <p>
+                    次回は楽曲制作編に入りましょう～～    
+                </p>
+                <!--　　　　　本文ここまで　　　　　-->
+            </article>
+        </div>
+        <br><br><br>
+    </main>
+
+    <div class="article-navigation">
+        <a href="article_20241003.html">前の記事へ</a>
+        |
+        <a href="#">次の記事はまだです</a>
+    </div>
+
+    <br><br><br>
+    <footer>
+        <p>©td | <a href="https://x.com/td_synth1_990" target="_blank" rel="noopener noreferrer"><img src="../../assets/images/X_logo-white.png" width="16px" height="16px"></a> | <a href="https://soundcloud.com/user-711542494/tracks" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="../../assets/images/1x1_SoundCloudLogo_cloudmark.jpg" width="20px" height="20px"></p>
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="../../index.html">トップ</a></li>
+                <li><a href="../projects.html">参加した作品</a></li>
+                <li><a href="blog-2024.html">制作日記</a></li>
+                <li><a href="../games/gamelog.html">ゲームプレイ日記</a></li>
+                <li><a href="../policy.html">サイトポリシー</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf1ckzPJBiSVKJxvnfkTQ8l5ltq9RybevQwU52KbACS15hXZg/viewform?usp=sf_link">問い合わせ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/filter.js"></script>
+</body>
+</html>
