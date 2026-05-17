@@ -700,6 +700,10 @@ footer {
     background-color: #f2f2f2;
 }
 
+.blog-page h5 {
+    font-size: 1.0rem;
+}
+
 .aside-box {
     background-color: #f9f9f9;
     border-left: 4px solid #ccc;
@@ -724,6 +728,7 @@ footer {
 }
 
 .figure-blog img {
+    border: 1px solid #222;
     max-width: 100%; /* 画像の幅をコンテナ内に収める */
     height: auto; /* 高さを自動調整して画像の縦横比を保つ */
     display: block; /* 余計なスペースを取り除くためにブロック要素にする */
